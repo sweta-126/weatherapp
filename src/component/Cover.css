@@ -1,0 +1,29 @@
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,#0c0b17, #041e35 );
+    transition: opacity 0.5s ease-out; 
+    z-index: 9999; 
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e4e2f3;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+
+  }
+  
+  .cover.hidden {
+    opacity: 0; 
+  }
+
+  @media screen and (max-width:750px){
+    .cover{
+      font-size: 30px;
+    }
+  }
